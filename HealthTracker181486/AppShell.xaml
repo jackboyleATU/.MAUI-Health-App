@@ -4,11 +4,40 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:HealthTracker181486"
+    xmlns:view="clr-namespace:HealthTracker181486.View"
     Title="HealthTracker181486">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
+
+    <TabBar>
+        <Tab Title="Dashboard" Icon="dashboard.png">
+            <ShellContent
+                Title="Dashboard"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        
+        <Tab Title="Activity" Icon="activity.png">
+            <ShellContent
+                Title="Activity"
+                ContentTemplate="{DataTemplate view:Activity}"
+                Route="ActivityPage" />
+        </Tab>
+        <Tab Title="Sleep" Icon="sleep.png">
+            <ShellContent
+                Title="Sleep"
+                ContentTemplate="{DataTemplate view:Sleep}"
+                Route="SleepPage" />
+        </Tab>
+        <Tab Title="Vitals" Icon="vitals.png">
+            <ShellContent
+                Title="Vitals"
+                ContentTemplate="{DataTemplate view:Vitals}"
+                Route="VitalsPage" />
+        </Tab>
+    </TabBar>
 
 </Shell>
