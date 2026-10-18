@@ -5,7 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:HealthTracker181486"
     xmlns:view="clr-namespace:HealthTracker181486.View"
-    Title="HealthTracker181486">
+    Title="HealthTracker181486"
+    Shell.BackgroundColor="{StaticResource Background}"
+    Shell.TabBarBackgroundColor="{StaticResource BackgroundLight}"
+    Shell.TabBarForegroundColor="white"
+    Shell.TabBarTitleColor="white"
+    Shell.TabBarUnselectedColor="LightGray">
+    
+    
 
     <!--<ShellContent
         Title="Home"
@@ -15,7 +22,6 @@
     <TabBar>
         <Tab Title="Dashboard" Icon="dashboard.png">
             <ShellContent
-                Title="Dashboard"
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="MainPage" />
         </Tab>

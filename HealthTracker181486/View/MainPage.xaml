@@ -2,41 +2,120 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthTracker181486.MainPage">
-    <ScrollView>
-        <VerticalStackLayout
-        Padding="30,0"
-        Spacing="25">
-            <Image
-            Source="dotnet_bot.png"
-            HeightRequest="185"
-            Aspect="AspectFit"
-            SemanticProperties.Description="dot net bot in a submarine number ten" />
 
-            <Label
-            Text="Hello, World!"
-            Style="{StaticResource Headline}"
-            SemanticProperties.HeadingLevel="Level1" />
 
-            <Label
-            Text="Welcome to &#10;.NET Multi-platform App UI"
-            Style="{StaticResource SubHeadline}"
-            SemanticProperties.HeadingLevel="Level2"
-            SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+    <Grid BackgroundColor="{StaticResource Background}">
 
-            <Button
-            x:Name="CounterBtn"
-            Text="Click me" 
-            SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnCounterClicked"
-            HorizontalOptions="Fill" />
+        <ScrollView>
+            <VerticalStackLayout Padding="16,16,16,16" Spacing="12">
 
-            <Button
-            x:Name="NavBtn"
-            Text="Navigate to Page 1" 
-            SemanticProperties.Hint="Counts the number of times you click"
-            Clicked="OnNavClicked"
-            HorizontalOptions="Fill" />
-        </VerticalStackLayout>
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16" Margin="8,8,8,4">
+                    <Label Text="Health App" TextColor="White" FontSize="32" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Border Grid.Column="1" WidthRequest="48" HeightRequest="48" StrokeThickness="0" StrokeShape="RoundRectangle 24"
+                            BackgroundColor="#8FD3A8">
+                        <Button Text="P" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                </Grid>
+
+                <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="12">
+
+                    <!-- Steps Tile -->
+                    <Border Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}">
+                        <Grid>
+                            <Label Text="Daily Steps" TextColor="{StaticResource White}" FontSize="18"/>
+                            <Grid VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,0">
+                                <Ellipse WidthRequest="90" HeightRequest="90" Stroke="#2A3318" StrokeThickness="8" />
+                                <Ellipse WidthRequest="90" HeightRequest="90" Stroke="LimeGreen" StrokeThickness="8" StrokeLineCap="Round" StrokeDashArray="20.2, 30" Rotation="-90"/>
+                                <Image Source="walking.png" WidthRequest="50" HeightRequest="50"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+
+                    <!-- Calories Tile -->
+                    <Border Grid.Column="1" Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}">
+                        <Grid>
+                            <Label Text="Daily Calories" TextColor="{StaticResource White}" FontSize="18"/>
+                            <Grid VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,0">
+                                <Ellipse WidthRequest="90" HeightRequest="90" Stroke="#470000" StrokeThickness="8" />
+                                <Ellipse WidthRequest="90" HeightRequest="90" Stroke="#D10000" StrokeThickness="8" StrokeLineCap="Round" StrokeDashArray="20.2, 30" Rotation="-90"/>
+                                <Image Source="fire.png" WidthRequest="50" HeightRequest="50"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+
+                    <!-- Heart Rate Tile -->
+                    <Border Grid.Row="1" Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}">
+                        <Grid>
+                            <Label Text="Heart Rate" TextColor="{StaticResource White}" FontSize="18"/>
+                            <Grid VerticalOptions="Center" HorizontalOptions="Center" Margin="0,20,0,0" ColumnSpacing="10">
+                                <Image Source="heart.png" WidthRequest="100" HeightRequest="100"/>
+                                <Label Text="78" TextColor="white" FontSize="40" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </Grid>
+                        </Grid>
+                    </Border>
+
+                    <!-- Sleep Tile -->
+                    <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}">
+                        <Grid>
+                            <Label Text="Sleep" TextColor="{StaticResource White}" FontSize="18"/>
+                            <Image Source="moon.png" WidthRequest="65" HeightRequest="65" HorizontalOptions="Start" Margin="0,20,0,0"/>
+                            <Label Text="7" TextColor="White" FontSize="30" HorizontalOptions="Center" FontAttributes="Bold" Margin="10,40,0,0"/>
+                            <Label Text="H" TextColor="White" FontSize="15" HorizontalOptions="Center" Margin="90,50,0,0"/>
+                            <Label Text="24" TextColor="White" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" Margin="20,80,0,0"/>
+                            <Label Text="Min" TextColor="White" FontSize="15" HorizontalOptions="Center" Margin="100,90,0,0"/>
+                        </Grid>
+                    </Border>
+
+
+                </Grid>
+
+                <!-- Exercise Multi Select -->
+                <Border Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}" HeightRequest="200">
+                    <Grid RowDefinitions="Auto,*" RowSpacing="8">
+                        <Label Text="Exercise" TextColor="{StaticResource White}" FontSize="18"/>
+
+                        <Grid Grid.Row="1" ColumnDefinitions="*,*,*,*" VerticalOptions="End">
+
+                            <!-- Walking Button -->
+                            <VerticalStackLayout Spacing="8">
+                                <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="Green">
+                                    <Image Source="walking.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </Border>
+                                <Label Text="Walking" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </VerticalStackLayout>
+
+                            <!-- Running Button -->
+                            <VerticalStackLayout Grid.Column="1" Spacing="8">
+                                <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="#73841f">
+                                    <Image Source="running.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </Border>
+                                <Label Text="Running" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </VerticalStackLayout>
+
+                            <!-- Biking Button -->
+                            <VerticalStackLayout Grid.Column="2" Spacing="8">
+                                <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="#da6954">
+                                    <Image Source="bike.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </Border>
+                                <Label Text="Biking" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </VerticalStackLayout>
+
+                            <!-- More Button -->
+                            <VerticalStackLayout Grid.Column="3" Spacing="8">
+                                <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="#646368">
+                                    <Image Source="menu.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                </Border>
+                                <Label Text="More" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </VerticalStackLayout>
+
+                        </Grid>
+                     </Grid>
+    </Border>
+
+    </VerticalStackLayout>
     </ScrollView>
+
+    </Grid>
+
 
 </ContentPage>

@@ -12,7 +12,7 @@
         {
         }
 
-        private void OnNavClicked(object? sender, EventArgs e)
+        private void OnNavTapped(object? sender, EventArgs e)
         {
         }
 
