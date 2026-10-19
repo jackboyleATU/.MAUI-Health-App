@@ -15,42 +15,63 @@
     <ScrollView>
         <VerticalStackLayout Padding="16,16,16,16" Spacing="12">
             
-            <!-- Day Selector -->
-            <Grid ColumnDefinitions="56,*,56" Margin="8,4,8,8">
-                <ImageButton Source="chevronleft.png" WidthRequest="24" HeightRequest="24" BackgroundColor="Transparent" Clicked="OnPrevDayClicked"/>
+            <!-- Time Range Selector -->
+            <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="4" Margin="8,4">
+                <Border x:Name="HoursTab" HeightRequest="52" StrokeThickness="0" StrokeShape="RoundRectangle 26" BackgroundColor="#3A3A3C">
+                    <Label x:Name="HoursLabel" Text="Hours" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
 
-                <Border Grid.Column="1" HeightRequest="56" StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}">
-                    <Label x:Name="DayLabel" Text="Today" TextColor="White" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="0" Tapped="OnTabTapped" />
+                    </Border.GestureRecognizers>
                 </Border>
-                
-                <ImageButton x:Name="NextDayButton" Grid.Column="2" Source="chevronright.png" WidthRequest="24" HeightRequest="24" BackgroundColor="Transparent" Clicked="OnNextDayClicked"/>
+
+                <Border x:Name="DaysTab" Grid.Column="1" HeightRequest="52" StrokeThickness="0" StrokeShape="RoundRectangle 26">
+                    <Label x:Name="DaysLabel" Text="Days" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#8E8E93"/>
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="1" Tapped="OnTabTapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border x:Name="WeeksTab" Grid.Column="2" HeightRequest="52" StrokeThickness="0" StrokeShape="RoundRectangle 26">
+                    <Label x:Name="WeeksLabel" Text="Weeks" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#8E8E93"/>
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="2" Tapped="OnTabTapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border x:Name="MonthsTab" Grid.Column="3" HeightRequest="52" StrokeThickness="0" StrokeShape="RoundRectangle 26">
+                    <Label x:Name="MonthsLabel" Text="Months" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center" TextColor="#8E8E93"/>
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="3" Tapped="OnTabTapped" />
+                    </Border.GestureRecognizers>
+                </Border>
             </Grid>
 
 
 
-            <!-- Sleep Time -->
+            <!-- Heart Rate -->
             <Border Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}">
                 <VerticalStackLayout Spacing="4" Padding="8" VerticalOptions="Center">
                     <Grid RowDefinitions="*,*">
-                        <Label Text="Sleep Time" FontSize="20" HorizontalOptions="Start" TextColor="white"/>
-                        <Label Grid.Row="1" Text="6 hrs 23 mins" FontSize="29" TextColor="white" />
+                        <Label Text="Heart Rate Range" FontSize="20" HorizontalOptions="Start" TextColor="white"/>
+                        <Label Grid.Row="1" Text="46-114 bpm" FontSize="29" TextColor="white" />
                     </Grid>
 
                 </VerticalStackLayout>
             </Border>
 
             <Border Style="{StaticResource Tile}" HeightRequest="240" BackgroundColor="{StaticResource BackgroundLight}">
-                <Grid RowDefinitions="Auto,*" RowSpacing="12">
-                    <Label Text="Sleep over last 7 days" TextColor="white" FontSize="20"/>
 
-                    <GraphicsView Grid.Row="1">
-                        <GraphicsView.Drawable>
-                            <local:SleepWeekDrawable/>
-                        </GraphicsView.Drawable>
-                    </GraphicsView>
-                </Grid>
+                <GraphicsView Grid.Row="1">
+                    <GraphicsView.Drawable>
+                        <local:HeartRateDrawable/>
+                    </GraphicsView.Drawable>
+                </GraphicsView>
 
-                
+
             </Border>
 
         </VerticalStackLayout>

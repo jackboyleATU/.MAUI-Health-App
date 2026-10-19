@@ -74,6 +74,9 @@
 	  <Compile Update="View\HeartRatePage.xaml.cs">
 	    <DependentUpon>HeartRatePage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="View\ExerciseList.xaml.cs">
+	    <DependentUpon>ExerciseList.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\SleepPage.xaml.cs">
 	    <DependentUpon>SleepPage.xaml</DependentUpon>
 	  </Compile>
@@ -92,7 +95,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="View\AddExercise.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\HeartRatePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\ExerciseList.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\SleepPage.xaml">

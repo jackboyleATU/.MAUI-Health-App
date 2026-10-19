@@ -62,6 +62,10 @@
                                 <Label Text="78" TextColor="white" FontSize="40" VerticalOptions="Center" HorizontalOptions="Center"/>
                             </Grid>
                         </Grid>
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer CommandParameter="HeartRate" Tapped="OnTileTapped" />
+                        </Border.GestureRecognizers>
                     </Border>
 
                     <!-- Sleep Tile -->
@@ -85,6 +89,11 @@
 
                 <!-- Exercise Multi Select -->
                 <Border Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}" HeightRequest="200">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="ExerciseList" Tapped="OnTileTapped" />
+                    </Border.GestureRecognizers>
+
                     <Grid RowDefinitions="Auto,*" RowSpacing="8">
                         <Label Text="Exercise" TextColor="{StaticResource White}" FontSize="18"/>
 

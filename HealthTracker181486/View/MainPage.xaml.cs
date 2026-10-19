@@ -12,6 +12,8 @@ namespace HealthTracker181486
             Routing.RegisterRoute("Steps", typeof(StepsPage));
             Routing.RegisterRoute("Calories", typeof(CaloriesPage));
             Routing.RegisterRoute("Sleep", typeof(SleepPage));
+            Routing.RegisterRoute("HeartRate", typeof(HeartRatePage));
+            Routing.RegisterRoute("ExerciseList", typeof(ExerciseList));
         }
 
         private async void OnTileTapped(object? sender, TappedEventArgs e)

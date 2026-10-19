@@ -50,7 +50,8 @@
 
                 </VerticalStackLayout>
             </Border>
-
+            
+            <!-- Steps graphs -->
             <Border Style="{StaticResource Tile}" HeightRequest="300" BackgroundColor="{StaticResource BackgroundLight}">
                 <Grid RowDefinitions="Auto,*" RowSpacing="12">
                     <Label Text="Steps by time of day" TextColor="white" FontSize="20"/>

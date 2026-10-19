@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthTracker181486.View.ExerciseList"
+             Title="Exercise List"
+             Shell.TitleColor="white"
+             Shell.ForegroundColor="white"
+             BackgroundColor="{StaticResource Background}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="plus.png" Clicked="OnAddClicked" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16,16,16,16" Spacing="12">
+            
+            <Border Style="{StaticResource Tile}">
+                <Grid ColumnDefinitions="120,*">
+                    <!-- Image -->
+                    <Image Source="walking.png" HorizontalOptions="Start" WidthRequest="100" HeightRequest="100" />
+                    <Grid Grid.Column="1" RowDefinitions="*,*">
+                        <!-- Exercise name -->
+                        <Label Text="Walking" TextColor="White" FontSize="25" VerticalOptions="Center"/>
+                        <Grid Grid.Row="1" ColumnDefinitions="160,*">
+                            <!-- Steps -->
+                            <Label Text="1000 steps" TextColor="White" FontSize="30" />
+                            <!-- Distance -->
+                            <Label Text="1.0 km" TextColor="LightGray" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border Style="{StaticResource Tile}">
+                <Grid ColumnDefinitions="120,*">
+                    <!-- Image -->
+                    <Image Source="running.png" HorizontalOptions="Start" WidthRequest="100" HeightRequest="100" />
+                    <Grid Grid.Column="1" RowDefinitions="*,*">
+                        <!-- Exercise name -->
+                        <Label Text="Running" TextColor="White" FontSize="25" VerticalOptions="Center"/>
+                        <Grid Grid.Row="1" ColumnDefinitions="160,*">
+                            <!-- Steps -->
+                            <Label Text="1000 steps" TextColor="White" FontSize="30" />
+                            <!-- Distance -->
+                            <Label Text="1.0 km" TextColor="LightGray" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border Style="{StaticResource Tile}">
+                <Grid ColumnDefinitions="120,*">
+                    <!-- Image -->
+                    <Image Source="bike.png" HorizontalOptions="Start" WidthRequest="100" HeightRequest="100" />
+                    <Grid Grid.Column="1" RowDefinitions="*,*">
+                        <!-- Exercise name -->
+                        <Label Text="Cycling" TextColor="White" FontSize="25" VerticalOptions="Center"/>
+                        <Grid Grid.Row="1" ColumnDefinitions="160,*">
+                            <!-- Steps -->
+                            <Label Text="2.6 km" TextColor="White" FontSize="30" />
+                            <!-- Distance -->
+                            <Label Text="243 cal" TextColor="LightGray" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border Style="{StaticResource Tile}">
+                <Grid ColumnDefinitions="120,*">
+                    <!-- Image -->
+                    <Image Source="football.png" HorizontalOptions="Start" WidthRequest="100" HeightRequest="100" />
+                    <Grid Grid.Column="1" RowDefinitions="*,*">
+                        <!-- Exercise name -->
+                        <Label Text="Football" TextColor="White" FontSize="25" VerticalOptions="Center"/>
+                        <Grid Grid.Row="1" ColumnDefinitions="160,*">
+                            <!-- Steps -->
+                            <Label Text="1000 steps" TextColor="White" FontSize="30" />
+                            <!-- Distance -->
+                            <Label Text="243 cal" TextColor="LightGray" Grid.Column="1" FontSize="15" Margin="0,10,0,0"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

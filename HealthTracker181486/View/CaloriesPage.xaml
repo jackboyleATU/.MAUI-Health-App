@@ -27,7 +27,7 @@
             </Grid>
 
 
-            <!-- Steps -->
+            <!-- Calories Burned -->
             <Border Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}">
                 <VerticalStackLayout Spacing="4" Padding="8">
                     <Grid ColumnDefinitions="*,*" Margin="0,0,0,20">
@@ -49,7 +49,9 @@
 
                 </VerticalStackLayout>
             </Border>
-
+            
+            
+            <!-- Calories graphs -->
             <Border Style="{StaticResource Tile}" HeightRequest="300" BackgroundColor="{StaticResource BackgroundLight}">
                 <Grid RowDefinitions="Auto,*" RowSpacing="12">
                     <Label Text="Calories burned by time of day" TextColor="white" FontSize="20"/>
