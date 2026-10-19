@@ -5,16 +5,20 @@
 
 
     <Grid BackgroundColor="{StaticResource Background}">
+        
 
         <ScrollView>
             <VerticalStackLayout Padding="16,16,16,16" Spacing="12">
 
-                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16" Margin="8,8,8,4">
+                <!-- Title, Profile Button, Menu Button-->
+                <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="16" Margin="8,8,8,4">
                     <Label Text="Health App" TextColor="White" FontSize="32" FontAttributes="Bold" VerticalOptions="Center"/>
                     <Border Grid.Column="1" WidthRequest="48" HeightRequest="48" StrokeThickness="0" StrokeShape="RoundRectangle 24"
                             BackgroundColor="#8FD3A8">
                         <Button Text="P" HorizontalOptions="Center" VerticalOptions="Center" />
                     </Border>
+                    <Image Source="threedots.png" Grid.Column="2"
+                           WidthRequest="28" HeightRequest="28" />
                 </Grid>
 
                 <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="12">
@@ -29,6 +33,9 @@
                                 <Image Source="walking.png" WidthRequest="50" HeightRequest="50"/>
                             </Grid>
                         </Grid>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer CommandParameter="Steps" Tapped="OnTileTapped" />
+                        </Border.GestureRecognizers>
                     </Border>
 
                     <!-- Calories Tile -->
@@ -41,6 +48,9 @@
                                 <Image Source="fire.png" WidthRequest="50" HeightRequest="50"/>
                             </Grid>
                         </Grid>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer CommandParameter="Calories" Tapped="OnTileTapped" />
+                        </Border.GestureRecognizers>
                     </Border>
 
                     <!-- Heart Rate Tile -->
@@ -64,6 +74,10 @@
                             <Label Text="24" TextColor="White" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" Margin="20,80,0,0"/>
                             <Label Text="Min" TextColor="White" FontSize="15" HorizontalOptions="Center" Margin="100,90,0,0"/>
                         </Grid>
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer CommandParameter="Sleep" Tapped="OnTileTapped" />
+                        </Border.GestureRecognizers>
                     </Border>
 
 

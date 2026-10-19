@@ -1,8 +1,8 @@
 namespace HealthTracker181486.View;
 
-public partial class Sleep : ContentPage
+public partial class Goals : ContentPage
 {
-	public Sleep()
+	public Goals()
 	{
 		InitializeComponent();
 	}

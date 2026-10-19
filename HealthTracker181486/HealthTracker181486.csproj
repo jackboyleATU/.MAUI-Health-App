@@ -71,22 +71,49 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="View\HeartRatePage.xaml.cs">
+	    <DependentUpon>HeartRatePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\SleepPage.xaml.cs">
+	    <DependentUpon>SleepPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\Goals.xaml.cs">
+	    <DependentUpon>Goals.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\CaloriesPage.xaml.cs">
+	    <DependentUpon>CaloriesPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\Trends.xaml.cs">
+	    <DependentUpon>Trends.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="View\Activity.xaml.cs">
 	    <DependentUpon>Activity.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="View\HeartRatePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\SleepPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Goals.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\CaloriesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\StepsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\Trends.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\Activity.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="View\Profile.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Sleep.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="View\Vitals.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

@@ -32,17 +32,17 @@
                 ContentTemplate="{DataTemplate view:Activity}"
                 Route="ActivityPage" />
         </Tab>
-        <Tab Title="Sleep" Icon="sleep.png">
+        <Tab Title="Trends" Icon="sleep.png">
             <ShellContent
-                Title="Sleep"
-                ContentTemplate="{DataTemplate view:Sleep}"
-                Route="SleepPage" />
+                Title="Trends"
+                ContentTemplate="{DataTemplate view:Trends}"
+                Route="TrendsPage" />
         </Tab>
-        <Tab Title="Vitals" Icon="vitals.png">
+        <Tab Title="Goals" Icon="vitals.png">
             <ShellContent
-                Title="Vitals"
-                ContentTemplate="{DataTemplate view:Vitals}"
-                Route="VitalsPage" />
+                Title="Goals"
+                ContentTemplate="{DataTemplate view:Goals}"
+                Route="GoalsPage" />
         </Tab>
     </TabBar>
 

@@ -1,8 +1,8 @@
 namespace HealthTracker181486.View;
 
-public partial class Vitals : ContentPage
+public partial class Trends : ContentPage
 {
-	public Vitals()
+	public Trends()
 	{
 		InitializeComponent();
 	}

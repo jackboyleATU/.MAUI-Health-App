@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthTracker181486.View.HeartRatePage"
+             xmlns:local="clr-namespace:HealthTracker181486.Resources.Services"
+             Title="Heart Rate"
+             Shell.TitleColor="white"
+             Shell.ForegroundColor="white"
+             BackgroundColor="{StaticResource Background}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Set goal" Order="Secondary" Clicked="OnMenuClicked" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16,16,16,16" Spacing="12">
+            
+            <!-- Day Selector -->
+            <Grid ColumnDefinitions="56,*,56" Margin="8,4,8,8">
+                <ImageButton Source="chevronleft.png" WidthRequest="24" HeightRequest="24" BackgroundColor="Transparent" Clicked="OnPrevDayClicked"/>
+
+                <Border Grid.Column="1" HeightRequest="56" StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}">
+                    <Label x:Name="DayLabel" Text="Today" TextColor="White" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Border>
+                
+                <ImageButton x:Name="NextDayButton" Grid.Column="2" Source="chevronright.png" WidthRequest="24" HeightRequest="24" BackgroundColor="Transparent" Clicked="OnNextDayClicked"/>
+            </Grid>
+
+
+
+            <!-- Sleep Time -->
+            <Border Style="{StaticResource Tile}" BackgroundColor="{StaticResource BackgroundLight}">
+                <VerticalStackLayout Spacing="4" Padding="8" VerticalOptions="Center">
+                    <Grid RowDefinitions="*,*">
+                        <Label Text="Sleep Time" FontSize="20" HorizontalOptions="Start" TextColor="white"/>
+                        <Label Grid.Row="1" Text="6 hrs 23 mins" FontSize="29" TextColor="white" />
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tile}" HeightRequest="240" BackgroundColor="{StaticResource BackgroundLight}">
+                <Grid RowDefinitions="Auto,*" RowSpacing="12">
+                    <Label Text="Sleep over last 7 days" TextColor="white" FontSize="20"/>
+
+                    <GraphicsView Grid.Row="1">
+                        <GraphicsView.Drawable>
+                            <local:SleepWeekDrawable/>
+                        </GraphicsView.Drawable>
+                    </GraphicsView>
+                </Grid>
+
+                
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
