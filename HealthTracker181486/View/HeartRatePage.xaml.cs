@@ -30,8 +30,5 @@ public partial class HeartRatePage : ContentPage
         }
     }
 
-	void OnMenuClicked(object? sender, EventArgs e)
-    {
-    }
 
 }

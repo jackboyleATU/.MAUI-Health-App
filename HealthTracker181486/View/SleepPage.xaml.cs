@@ -40,8 +40,9 @@ public partial class SleepPage : ContentPage
         UpdateDay();
     }
 
-	void OnMenuClicked(object? sender, EventArgs e)
+	async void OnMenuClicked(object? sender, EventArgs e)
     {
+        await Shell.Current.GoToAsync("SetGoal?goal=Sleep");
     }
 
 }

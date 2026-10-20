@@ -110,6 +110,9 @@
 	  <MauiXaml Update="View\ExerciseList.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\SetGoal.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\SleepPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

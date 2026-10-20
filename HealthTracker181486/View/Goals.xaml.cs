@@ -6,4 +6,12 @@ public partial class Goals : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	async void OnGoalTapped(object sender, TappedEventArgs e)
+    {
+        if(e.Parameter is string goal)
+		{
+			await Shell.Current.GoToAsync($"SetGoal?goal={goal}");
+		}
+    }
 }

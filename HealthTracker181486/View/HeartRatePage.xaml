@@ -8,9 +8,6 @@
              Shell.ForegroundColor="white"
              BackgroundColor="{StaticResource Background}">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Set goal" Order="Secondary" Clicked="OnMenuClicked" />
-    </ContentPage.ToolbarItems>
 
     <ScrollView>
         <VerticalStackLayout Padding="16,16,16,16" Spacing="12">
