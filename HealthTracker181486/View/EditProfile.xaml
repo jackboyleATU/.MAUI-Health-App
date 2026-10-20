@@ -45,7 +45,7 @@
 
 
             <!-- Form -->
-            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
+            <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
                 <VerticalStackLayout>
 
                     <Label Text="Personal Details" TextColor="White" FontSize="20" Margin="0,0,0,4" />

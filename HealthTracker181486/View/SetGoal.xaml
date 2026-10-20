@@ -9,7 +9,7 @@
     <ScrollView>
         <VerticalStackLayout Padding="16" Spacing="16">
 
-            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
+            <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
                 <VerticalStackLayout>
 
                     <Label Text="Goal" TextColor="#B5B3B8" FontSize="14" Margin="4,0,0,4" />

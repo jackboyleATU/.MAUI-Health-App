@@ -10,7 +10,7 @@
     <ScrollView>
         <VerticalStackLayout Padding="16" Spacing="12">
 
-            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
+            <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
                 <Grid ColumnDefinitions="*,Auto">
                     <VerticalStackLayout VerticalOptions="Center">
                         <Label Text="Today" TextColor="#B5B3B8" FontSize="15" />
@@ -27,7 +27,7 @@
             <Label Text="Daily Goals" TextColor="#B5B3B8" FontSize="16" Margin="12,8,0,0" />
             
             <!-- Steps -->
-            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
+            <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
                 <VerticalStackLayout Spacing="12">
                     <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
                         <Image Source="walking.png" WidthRequest="32" HeightRequest="32" />
@@ -48,7 +48,7 @@
             </Border>
 
             <!-- Calories -->
-            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
+            <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
                 <VerticalStackLayout Spacing="12">
                     <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
                         <Image Source="fire.png" WidthRequest="32" HeightRequest="32" />
@@ -70,7 +70,7 @@
 
             
             <!-- Calories -->
-            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
+            <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
                 <VerticalStackLayout Spacing="12">
                     <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
                         <Image Source="moon.png" WidthRequest="32" HeightRequest="32" />

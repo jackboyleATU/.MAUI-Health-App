@@ -25,14 +25,7 @@
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="MainPage" />
         </Tab>
-        
-        <Tab Title="Activity" Icon="activity.png">
-            <ShellContent
-                Title="Activity"
-                ContentTemplate="{DataTemplate view:Activity}"
-                Route="ActivityPage" />
-        </Tab>
-        
+
         <Tab Title="Trends" Icon="trend.png">
             <ShellContent
                 Title="Trends"

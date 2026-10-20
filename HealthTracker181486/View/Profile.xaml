@@ -47,7 +47,7 @@
             
             <!-- Personal Details -->
             <Label Text="Personal details" Style="{StaticResource SectionTitle}" />
-            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20,4">
+            <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20,4">
                 <VerticalStackLayout>
                     <Grid ColumnDefinitions="*,Auto" HeightRequest="60">
                         <Label Text="Date of Birth" Style="{StaticResource RowName}" />
@@ -76,19 +76,19 @@
             
             <!-- Summary Statistics -->
             <Grid ColumnDefinitions="*,*,*" ColumnSpacing="12">
-                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
+                <Border StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
                     <VerticalStackLayout HorizontalOptions="Center">
                         <Label Text="23.1" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
                         <Label Text="BMI" TextColor="#B5B3B8" FontSize="13" HorizontalOptions="Center" />
                     </VerticalStackLayout>
                 </Border>
-                <Border Grid.Column="1" StrokeThickness="0" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
+                <Border Grid.Column="1" StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
                     <VerticalStackLayout HorizontalOptions="Center">
                         <Label Text="4" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
                         <Label Text="Workouts" TextColor="#B5B3B8" FontSize="13" HorizontalOptions="Center" />
                     </VerticalStackLayout>
                 </Border>
-                <Border Grid.Column="2" StrokeThickness="0" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
+                <Border Grid.Column="2" StrokeThickness="2" Stroke="#313131" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
                     <VerticalStackLayout HorizontalOptions="Center">
                         <Label Text="12" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
                         <Label Text="Day Streak" TextColor="#B5B3B8" FontSize="13" HorizontalOptions="Center" />

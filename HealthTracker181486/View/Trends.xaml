@@ -2,11 +2,175 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthTracker181486.View.Trends"
-             Title="Trends">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:local="clr-namespace:HealthTracker181486.Resources.Services"
+             Title="Trends"
+             Shell.TitleColor="white"
+             Shell.ForegroundColor="white"
+             BackgroundColor="{StaticResource Background}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            
+            <!-- Time range selector-->
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="4">
+
+                <Border x:Name="WeekTab" Style="{StaticResource RangeTab}" BackgroundColor="#3A3A3C">
+                    <Label x:Name="WeekLabel" Text="Week" TextColor="White" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="0" Tapped="OnRangeTapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border x:Name="MonthTab" Grid.Column="1" Style="{StaticResource RangeTab}" BackgroundColor="#01000000">
+                    <Label x:Name="MonthLabel" Text="Month" TextColor="#8E8E93" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="1" Tapped="OnRangeTapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border x:Name="YearTab" Grid.Column="2" Style="{StaticResource RangeTab}" BackgroundColor="#01000000">
+                    <Label x:Name="YearLabel" Text="Year" TextColor="#8E8E93" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer CommandParameter="2" Tapped="OnRangeTapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+            </Grid>
+
+            <Label x:Name="PeriodLabel" Text="This week vs last week" TextColor="#B5B3B8" FontSize="14" HorizontalOptions="Center" />
+            
+            
+            <!-- Insights -->
+            <Border Style="{StaticResource Card}">
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="16">
+                    <Border WidthRequest="52" HeightRequest="52" StrokeThickness="0" StrokeShape="RoundRectangle 26" BackgroundColor="#1E3A14" VerticalOptions="Center">
+                        <Label Text="▲" TextColor="LimeGreen" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                        <Label Text="You're more active" TextColor="White" FontSize="20" FontAttributes="Bold" />
+                        <Label Text="You walked 12% more than the previous period. Nice Work!" TextColor="#B5B3B8" FontSize="14" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+            
+            <!-- Comparison Stats -->
+            <Label Text="Averages" Style="{StaticResource SectionTitle}" />
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="12">
+                <Border Style="{StaticResource StatTile}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Steps" Style="{StaticResource StatName}" />
+                        <Label Text="5,840/day" Style="{StaticResource StatValue}" />
+                        <Label Text="▲ 12%" TextColor="LimeGreen" FontSize="14" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource StatTile}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Calories" Style="{StaticResource StatName}" />
+                        <Label Text="480/day" Style="{StaticResource StatValue}" />
+                        <Label Text="▼ 12%" TextColor="#FF5C5C" FontSize="14" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Style="{StaticResource StatTile}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Resting HR" Style="{StaticResource StatName}" />
+                        <Label Text="62 bpm" Style="{StaticResource StatValue}" />
+                        <Label Text="▼ 2%" TextColor="LimeGreen" FontSize="14" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Style="{StaticResource StatTile}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Sleep" Style="{StaticResource StatName}" />
+                        <Label Text="7h 05m" Style="{StaticResource StatValue}" />
+                        <Label Text="▼ 6%" TextColor="#FF5C5C" FontSize="14" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource StatTile}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Resting HR" Style="{StaticResource StatName}" />
+                        <Label Text="62 bpm" Style="{StaticResource StatValue}" />
+                        <Label Text="▼ 2%" TextColor="LimeGreen" FontSize="14" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+            
+            <!-- Chart with stat switcher -->
+            <Border Style="{StaticResource Card}" HeightRequest="320">
+                <Grid RowDefinitions="Auto,Auto,*" RowSpacing="12">
+
+                    <Label x:Name="ChartTitle" Text="Steps" TextColor="White" FontSize="20" />
+
+                    <HorizontalStackLayout Grid.Row="1" Spacing="8">
+                        <Border x:Name="StepsPill" Style="{StaticResource MetricPill}" BackgroundColor="#3A3A3C">
+                            <Label x:Name="StepsPillLabel" Text="Steps" TextColor="White" FontSize="14" VerticalOptions="Center" />
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="0" Tapped="OnMetricTapped" />
+                            </Border.GestureRecognizers>
+                        </Border>
+                        <Border x:Name="CaloriesPill" Style="{StaticResource MetricPill}" BackgroundColor="#01000000">
+                            <Label x:Name="CaloriesPillLabel" Text="Calories" TextColor="#8E8E93" FontSize="14" VerticalOptions="Center" />
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="1" Tapped="OnMetricTapped" />
+                            </Border.GestureRecognizers>
+                        </Border>
+                        <Border x:Name="SleepPill" Style="{StaticResource MetricPill}" BackgroundColor="#01000000">
+                            <Label x:Name="SleepPillLabel" Text="Sleep" TextColor="#8E8E93" FontSize="14" VerticalOptions="Center" />
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="2" Tapped="OnMetricTapped" />
+                            </Border.GestureRecognizers>
+                        </Border>
+                    </HorizontalStackLayout>
+
+                    <GraphicsView x:Name="TrendChart" Grid.Row="2">
+                        <GraphicsView.Drawable>
+                            <local:TrendDrawable     />
+                        </GraphicsView.Drawable>
+                    </GraphicsView>
+
+                </Grid>
+            </Border>
+            
+            <!-- Personal Bests -->
+            <Label Text="Personal Bests" Style="{StaticResource SectionTitle}" />
+            <Border Style="{StaticResource Card}" Padding="20,4">
+                <VerticalStackLayout>
+
+                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14" HeightRequest="64">
+                        <Image Source="walking.png" WidthRequest="30" HeightRequest="30" />
+                        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                            <Label Text="Most Steps in a Day" TextColor="White" FontSize="17" />
+                            <Label Text="2 Oct 2026" TextColor="#8E8E93" FontSize="13" />
+                        </VerticalStackLayout>
+                        <Label Grid.Column="2" Text="14,203" TextColor="White" FontSize="17" VerticalOptions="Center"  FontAttributes="Bold"/>
+                        <BoxView Grid.ColumnSpan="3" HeightRequest="1" BackgroundColor="#3A3A3C" VerticalOptions="End" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14" HeightRequest="64">
+                        <Image Source="moon.png" WidthRequest="30" HeightRequest="30" />
+                        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                            <Label Text="Longest Sleep" TextColor="White" FontSize="17" />
+                            <Label Text="11 Oct 2026" TextColor="#8E8E93" FontSize="13" />
+                        </VerticalStackLayout>
+                        <Label Grid.Column="2" Text="9h 12m" TextColor="White" FontSize="17" VerticalOptions="Center"  FontAttributes="Bold"/>
+                        <BoxView Grid.ColumnSpan="3" HeightRequest="1" BackgroundColor="#3A3A3C" VerticalOptions="End" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="14" HeightRequest="64">
+                        <Image Source="running.png" WidthRequest="30" HeightRequest="30" />
+                        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
+                            <Label Text="Longest Run" TextColor="White" FontSize="17" />
+                            <Label Text="27 Sep 2026" TextColor="#8E8E93" FontSize="13" />
+                        </VerticalStackLayout>
+                        <Label Grid.Column="2" Text="8.4 km" TextColor="White" FontSize="17" VerticalOptions="Center"  FontAttributes="Bold"/>
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
 </ContentPage>
