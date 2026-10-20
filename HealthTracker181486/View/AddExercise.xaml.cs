@@ -5,10 +5,12 @@ public partial class AddExercise : ContentPage
 	public AddExercise()
 	{
 		InitializeComponent();
-	}
 
-    private void OnExerciseTapped(object sender, TappedEventArgs e)
+        
+    }
+
+    private async void OnExerciseTapped(object sender, TappedEventArgs e)
     {
-
+        await Shell.Current.GoToAsync("ExerciseActive");
     }
 }

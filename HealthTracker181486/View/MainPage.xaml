@@ -15,7 +15,10 @@
                     <Label Text="Health App" TextColor="White" FontSize="32" FontAttributes="Bold" VerticalOptions="Center"/>
                     <Border Grid.Column="1" WidthRequest="48" HeightRequest="48" StrokeThickness="0" StrokeShape="RoundRectangle 24"
                             BackgroundColor="#8FD3A8">
-                        <Button Text="P" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Label Text="P" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnProfileTapped" />
+                        </Border.GestureRecognizers>
                     </Border>
                     <Image Source="threedots.png" Grid.Column="2"
                            WidthRequest="28" HeightRequest="28" />
@@ -103,6 +106,10 @@
                             <VerticalStackLayout Spacing="8">
                                 <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="Green">
                                     <Image Source="walking.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnExerciseTapped" />
+                                    </Border.GestureRecognizers>
                                 </Border>
                                 <Label Text="Walking" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
                             </VerticalStackLayout>
@@ -111,6 +118,10 @@
                             <VerticalStackLayout Grid.Column="1" Spacing="8">
                                 <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="#73841f">
                                     <Image Source="running.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnExerciseTapped" />
+                                    </Border.GestureRecognizers>
                                 </Border>
                                 <Label Text="Running" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
                             </VerticalStackLayout>
@@ -119,6 +130,10 @@
                             <VerticalStackLayout Grid.Column="2" Spacing="8">
                                 <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="#da6954">
                                     <Image Source="bike.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnExerciseTapped" />
+                                    </Border.GestureRecognizers>
                                 </Border>
                                 <Label Text="Biking" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
                             </VerticalStackLayout>
@@ -127,6 +142,10 @@
                             <VerticalStackLayout Grid.Column="3" Spacing="8">
                                 <Border WidthRequest="72" HeightRequest="72" StrokeThickness="0" StrokeShape="RoundRectangle 36" BackgroundColor="#646368">
                                     <Image Source="menu.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnMoreTapped" />
+                                    </Border.GestureRecognizers>
                                 </Border>
                                 <Label Text="More" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
                             </VerticalStackLayout>

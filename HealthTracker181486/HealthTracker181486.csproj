@@ -98,6 +98,12 @@
 	  <MauiXaml Update="View\AddExercise.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\EditProfile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\ExerciseActive.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\HeartRatePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

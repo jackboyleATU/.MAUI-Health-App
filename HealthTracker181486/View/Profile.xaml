@@ -2,11 +2,110 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthTracker181486.View.Profile"
-             Title="Profile">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Profile"
+             Shell.TitleColor="white"
+             Shell.ForegroundColor="white"
+             BackgroundColor="{StaticResource Background}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit" Clicked="OnEditClicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <Style x:Key="RowName" TargetType="Label">
+            <Setter Property="TextColor" Value="#B5B3B8" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+        <Style x:Key="RowValue" TargetType="Label">
+            <Setter Property="TextColor" Value="white" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="HorizontalOptions" Value="End" />
+        </Style>
+        <Style x:Key="Divider" TargetType="BoxView">
+            <Setter Property="HeightRequest" Value="1" />
+            <Setter Property="Color" Value="#3A3A3C" />
+            <Setter Property="VerticalOptions" Value="End" />
+        </Style>
+        <Style x:Key="SectionTitle" TargetType="Label">
+            <Setter Property="TextColor" Value="#B5B3B8" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="12,8,0,0" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            
+            <!-- Basic Info Section -->
+            <VerticalStackLayout Spacing="6" Margin="0,8,0,8">
+                <Image Source="profilepic.png" WidthRequest="110" HeightRequest="110" HorizontalOptions="Center" />
+                <Label Text="John Smith" TextColor="white" FontSize="26" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="john.smith@gmail.com" TextColor="#B5B3B8" FontSize="15" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+            
+            <!-- Personal Details -->
+            <Label Text="Personal details" Style="{StaticResource SectionTitle}" />
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20,4">
+                <VerticalStackLayout>
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="60">
+                        <Label Text="Date of Birth" Style="{StaticResource RowName}" />
+                        <Label Grid.Column="1" Text="19 Oct 2004" Style="{StaticResource RowValue}" />
+                        <BoxView Grid.ColumnSpan="2" Style="{StaticResource Divider}" />
+                    </Grid>
+                    
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="60">
+                        <Label Text="Sex" Style="{StaticResource RowName}" />
+                        <Label Grid.Column="1" Text="Male" Style="{StaticResource RowValue}" />
+                        <BoxView Grid.ColumnSpan="2" Style="{StaticResource Divider}" />
+                    </Grid>
+                    
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="60">
+                        <Label Text="Height" Style="{StaticResource RowName}" />
+                        <Label Grid.Column="1" Text="180 cm" Style="{StaticResource RowValue}" />
+                        <BoxView Grid.ColumnSpan="2" Style="{StaticResource Divider}" />
+                    </Grid>
+                    
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="60">
+                        <Label Text="Weight" Style="{StaticResource RowName}" />
+                        <Label Grid.Column="1" Text="75 kg" Style="{StaticResource RowValue}" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+            
+            <!-- Summary Statistics -->
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="12">
+                <Border StrokeThickness="0" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Label Text="23.1" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="BMI" TextColor="#B5B3B8" FontSize="13" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="1" StrokeThickness="0" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Label Text="4" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Workouts" TextColor="#B5B3B8" FontSize="13" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="2" StrokeThickness="0" StrokeShape="RoundRectangle 20" BackgroundColor="{StaticResource BackgroundLight}" Padding="12,16">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Label Text="12" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Day Streak" TextColor="#B5B3B8" FontSize="13" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+            
+            <!-- Sign out button -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20, 4">
+                <Grid HeightRequest="60">
+                    <Label Text="Sign Out" TextColor="White" FontSize="16" HorizontalOptions="Center" VerticalOptions="Center" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSignOutTapped" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

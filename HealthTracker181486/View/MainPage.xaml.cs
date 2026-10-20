@@ -9,11 +9,7 @@ namespace HealthTracker181486
         {
             InitializeComponent();
 
-            Routing.RegisterRoute("Steps", typeof(StepsPage));
-            Routing.RegisterRoute("Calories", typeof(CaloriesPage));
-            Routing.RegisterRoute("Sleep", typeof(SleepPage));
-            Routing.RegisterRoute("HeartRate", typeof(HeartRatePage));
-            Routing.RegisterRoute("ExerciseList", typeof(ExerciseList));
+            
         }
 
         private async void OnTileTapped(object? sender, TappedEventArgs e)
@@ -24,5 +20,19 @@ namespace HealthTracker181486
             }
         }
 
+        private async void OnExerciseTapped(object? sender, TappedEventArgs e)
+        {
+            await Shell.Current.GoToAsync("ExerciseActive");
+        }
+
+        private async void OnMoreTapped(object? sender, TappedEventArgs e)
+        {
+            await Shell.Current.GoToAsync("AddExercise");
+        }
+
+        private async void OnProfileTapped(object? sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("ProfilePage");
+        }
     }
 }

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthTracker181486.View.EditProfile"
+             Title="Edit Profile"
+             Shell.TitleColor="white"
+             Shell.ForegroundColor="white"
+             BackgroundColor="{StaticResource Background}">
+
+    <ContentPage.Resources>
+        <Style x:Key="InputBox" TargetType="Border">
+            <Setter Property="StrokeThickness" Value="1" />
+            <Setter Property="Stroke" Value="#3A3A3C" />
+            <Setter Property="StrokeShape" Value="RoundRectangle 14" />
+            <Setter Property="Padding" Value="12,0" />
+            <Setter Property="HeightRequest" Value="52"/>
+        </Style>
+        <Style x:Key="FieldLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="#B5B3B8" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Margin" Value="4,8,0,4" />
+        </Style>
+        <Style x:Key="ErrorLabel" TargetType="Label">
+            <Setter Property="TextColor" Value="#FF5C5C" />
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Margin" Value="4,4,0,0" />
+            <Setter Property="IsVisible" Value="False" />
+        </Style>
+        <Style x:Key="FormEntry" TargetType="Entry">
+            <Setter Property="TextColor" Value="white" />
+            <Setter Property="PlaceholderColor" Value="#6E6E73" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="VerticalOptions" Value="Center" />
+
+        </Style>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="16">
+
+            <VerticalStackLayout Spacing="8" Margin="0,8,0,8">
+                <Image Source="profilepic.png" WidthRequest="110" HeightRequest="110" HorizontalOptions="Center" />
+                <Label x:Name="DisplayNameLabel" Text="John Smith" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+
+            <!-- Form -->
+            <Border StrokeThickness="0" StrokeShape="RoundRectangle 28" BackgroundColor="{StaticResource BackgroundLight}" Padding="20">
+                <VerticalStackLayout>
+
+                    <Label Text="Personal Details" TextColor="White" FontSize="20" Margin="0,0,0,4" />
+
+                    <!-- Name -->
+                    <Label Text="Full Name" Style="{StaticResource FieldLabel}" />
+                    <Border x:Name="NameBox" Style="{StaticResource InputBox}">
+                        <Entry x:Name="NameEntry" Style="{StaticResource FormEntry}" TextChanged="OnNameChanged" Placeholder="Enter your full name" />
+                    </Border>
+                    <Label x:Name="NameError" Text="Please enter your name"
+                        Style="{StaticResource ErrorLabel}" />
+
+                    <!-- Email -->
+                    <Label Text="Email" Style="{StaticResource FieldLabel}" />
+                    <Border x:Name="EmailBox" Style="{StaticResource InputBox}">
+                        <Entry x:Name="EmailEntry" Style="{StaticResource FormEntry}" Keyboard="Email" Placeholder="Enter your email" />
+                    </Border>
+                    <Label x:Name="EmailError" Text="Please enter a valid email"
+                    Style="{StaticResource ErrorLabel}" />
+
+                    <!-- Date of Birth -->
+                    <Label Text="Date of Birth" Style="{StaticResource FieldLabel}" />
+                    <Border x:Name="DobBox" Style="{StaticResource InputBox}">
+                        <DatePicker x:Name="DobPicker" Format="dd MMM yyyy" TextColor="White" FontSize="18" VerticalOptions="Center" />
+                    </Border>
+                    <Label x:Name="DobError" Text="You must be at least 13 years old"
+                    Style="{StaticResource ErrorLabel}" />
+
+                    <!-- Sex -->
+                    <Label Text="Sex" Style="{StaticResource FieldLabel}" />
+                    <Border x:Name="SexBox" Style="{StaticResource InputBox}">
+                        <Picker x:Name="SexPicker" TextColor="White" FontSize="18" VerticalOptions="Center" TitleColor="#6E6E73">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Male</x:String>
+                                    <x:String>Female</x:String>
+                                    <x:String>Other</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Border>
+                    <Label x:Name="SexError" Text="Please select an option"
+                    Style="{StaticResource ErrorLabel}" />
+
+                    <!-- Height and weight -->
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout>
+                            <Label Text="Height (cm)" Style="{StaticResource FieldLabel}" />
+                            <Border x:Name="HeightBox" Style="{StaticResource InputBox}">
+                                <Entry x:Name="HeightEntry" Placeholder="180" Keyboard="Numeric" Style="{StaticResource FormEntry}" />
+                            </Border>
+                            <Label x:Name="HeightError" Text="Please 50-250 cm"
+                            Style="{StaticResource ErrorLabel}" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Weight (kg)" Style="{StaticResource FieldLabel}" />
+                            <Border x:Name="WeightBox" Style="{StaticResource InputBox}">
+                                <Entry x:Name="WeightEntry" Placeholder="70" Keyboard="Numeric" Style="{StaticResource FormEntry}" />
+                            </Border>
+                            <Label x:Name="WeightError" Text="Please enter 20-300 kg"
+                            Style="{StaticResource ErrorLabel}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Buttons -->
+            <Button Text="Save Changes" HeightRequest="56" CornerRadius="28" FontSize="18" BackgroundColor="#4F9249" TextColor="White" Clicked="OnSaveClicked" />
+
+            <Button Text="Cancel" HeightRequest="56" CornerRadius="28" FontSize="18" BackgroundColor="#3A3A3C" TextColor="White" Clicked="OnCancelClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
