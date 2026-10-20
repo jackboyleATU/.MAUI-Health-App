@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthTracker181486.View.Settings"
+             Title="Settings"
+             Shell.TitleColor="white"
+             Shell.ForegroundColor="white"
+             BackgroundColor="{StaticResource Background}">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            
+            <!-- Preferences -->
+            <Label Text="Preferences" Style="{StaticResource SectionTitle}" />
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout>
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="64">
+                        <Label Text="Units" Style="{StaticResource RowLabel}" />
+                        <Picker Grid.Column="1" x:Name="UnitsPicker" Style="{StaticResource RowPicker}">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Metric (kg, cm)</x:String>
+                                    <x:String>Imperial (lbs, in)</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                        <BoxView Grid.ColumnSpan="2" Style="{StaticResource Divider}" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="64">
+                        <Label Text="Theme" Style="{StaticResource RowLabel}" />
+                        <Picker Grid.Column="1" x:Name="ThemePicker" Style="{StaticResource RowPicker}">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Dark</x:String>
+                                    <x:String>Light</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Notifications -->
+            <Label Text="Notifications" Style="{StaticResource SectionTitle}" />
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout>
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="64">
+                        <Label Text="Daily Reminders" Style="{StaticResource RowLabel}" />
+                        <Switch Grid.Column="1" x:Name="RemindersSwitch" IsToggled="True" OnColor="#4F9249" />
+                        <BoxView Grid.ColumnSpan="2" Style="{StaticResource Divider}" />
+                    </Grid>
+                    
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="64">
+                        <Label Text="Goal achieved alerts" Style="{StaticResource RowLabel}" />
+                        <Switch Grid.Column="1" IsToggled="True" OnColor="#4F9249" />
+                    </Grid>
+                
+                </VerticalStackLayout>
+            </Border>
+            
+            <Label Text="Health data" Style="{StaticResource SectionTitle}" />
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout>
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="64">
+                        <Label Text="Connect a device" Style="{StaticResource RowLabel}" />
+                        <Image Grid.Column="1" Source="chevronright.png" WidthRequest="20" HeightRequest="20" />
+                        <BoxView Grid.ColumnSpan="2" Style="{StaticResource Divider}" />
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnConnectDeviceTapped" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+
+                    <Grid ColumnDefinitions="*,Auto" HeightRequest="64">
+                        <Label Text="Delete all data" TextColor="#FF5C5C" FontSize="18" VerticalOptions="Center" />
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDeleteDataTapped" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+            
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

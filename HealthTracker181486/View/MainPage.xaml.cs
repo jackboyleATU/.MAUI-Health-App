@@ -22,7 +22,10 @@ namespace HealthTracker181486
 
         private async void OnExerciseTapped(object? sender, TappedEventArgs e)
         {
-            await Shell.Current.GoToAsync("ExerciseActive");
+            if (e.Parameter is string name)
+            {
+                await Shell.Current.GoToAsync($"ExerciseActive?exercise={Uri.EscapeDataString(name)}");
+            }
         }
 
         private async void OnMoreTapped(object? sender, TappedEventArgs e)
@@ -33,6 +36,20 @@ namespace HealthTracker181486
         private async void OnProfileTapped(object? sender, EventArgs e)
         {
             await Shell.Current.GoToAsync("ProfilePage");
+        }
+
+        private async void OnMenuTapped(object? sender, TappedEventArgs e)
+        {
+            string choice = await DisplayActionSheetAsync("Menu", "Cancel", null, "Settings", "About");
+
+            if (choice == "Settings")
+            {
+                await Shell.Current.GoToAsync("Settings");
+            }
+            else if (choice == "About")
+            {
+                await Shell.Current.GoToAsync("About");
+            }
         }
     }
 }

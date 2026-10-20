@@ -21,7 +21,11 @@
                         </Border.GestureRecognizers>
                     </Border>
                     <Image Source="threedots.png" Grid.Column="2"
-                           WidthRequest="28" HeightRequest="28" />
+                           WidthRequest="28" HeightRequest="28" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMenuTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
                 </Grid>
 
                 <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="12">
@@ -108,7 +112,7 @@
                                     <Image Source="walking.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
 
                                     <Border.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnExerciseTapped" />
+                                        <TapGestureRecognizer  CommandParameter="Walking" Tapped="OnExerciseTapped" />
                                     </Border.GestureRecognizers>
                                 </Border>
                                 <Label Text="Walking" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
@@ -120,7 +124,7 @@
                                     <Image Source="running.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
                                     
                                     <Border.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnExerciseTapped" />
+                                        <TapGestureRecognizer CommandParameter="Running" Tapped="OnExerciseTapped" />
                                     </Border.GestureRecognizers>
                                 </Border>
                                 <Label Text="Running" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />
@@ -132,7 +136,7 @@
                                     <Image Source="bike.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
 
                                     <Border.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnExerciseTapped" />
+                                        <TapGestureRecognizer CommandParameter="Biking" Tapped="OnExerciseTapped" />
                                     </Border.GestureRecognizers>
                                 </Border>
                                 <Label Text="Biking" TextColor="white" FontSize="14" HorizontalOptions="Center" VerticalOptions="Center" />

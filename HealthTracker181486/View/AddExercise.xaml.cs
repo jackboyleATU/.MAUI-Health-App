@@ -11,6 +11,9 @@ public partial class AddExercise : ContentPage
 
     private async void OnExerciseTapped(object sender, TappedEventArgs e)
     {
-        await Shell.Current.GoToAsync("ExerciseActive");
+        if(e.Parameter is string name)
+        {
+            await Shell.Current.GoToAsync($"ExerciseActive?exercise={Uri.EscapeDataString(name)}");
+        }
     }
 }

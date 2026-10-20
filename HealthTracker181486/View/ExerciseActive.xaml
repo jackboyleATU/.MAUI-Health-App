@@ -7,16 +7,18 @@
              Shell.ForegroundColor="white"
              BackgroundColor="{StaticResource Background}">
 
-    <Grid RowDefinitions="*,Auto" Padding="16,0,16,32">
+    <Grid RowDefinitions="Auto,*,Auto" Padding="16,0,16,32">
 
-        <Grid HorizontalOptions="Center" VerticalOptions="Center">
-            <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                <Label x:Name="TimeLabel" Text="00:00" TextColor="white" FontSize="64" />
-                <Label x:Name="Hundredths" Text=".00" TextColor="LightGray" FontSize="28" />
-            </HorizontalStackLayout>
-        </Grid>
+        <Label x:Name="TitleLabel" Text="Exercise" TextColor="White" FontSize="28" FontAttributes="Bold" VerticalOptions="Center" />
 
-        <VerticalStackLayout Grid.Row="1" Spacing="24">
+
+
+        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label x:Name="TimeLabel" Text="00:00" TextColor="white" FontSize="64" />
+            <Label x:Name="HundredthsLabel" Text=".00" TextColor="LightGray" FontSize="28" />
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" Spacing="24">
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="48">
                 <Button x:Name="ResetButton" Text="Reset" WidthRequest="96" HeightRequest="96" CornerRadius="48" BackgroundColor="#646368" TextColor="White" FontSize="18" IsEnabled="False" Opacity="0.4" Clicked="OnResetClicked" />
                 <Button x:Name="StartPauseButton" Text="Start" WidthRequest="96" HeightRequest="96" CornerRadius="48" BackgroundColor="#4F9249" TextColor="White" FontSize="18" Clicked="OnStartPauseClicked" />

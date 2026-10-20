@@ -20,6 +20,8 @@ namespace HealthTracker181486
             Routing.RegisterRoute("ExerciseActive", typeof(ExerciseActive));
             Routing.RegisterRoute("SetGoal", typeof(SetGoal));
             Routing.RegisterRoute("Goals", typeof(Goals));
+            Routing.RegisterRoute("Settings", typeof(Settings));
+            Routing.RegisterRoute("About", typeof(About));
 
         }
     }
