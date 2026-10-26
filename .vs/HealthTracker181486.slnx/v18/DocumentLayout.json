@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\goals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\goals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\setgoal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\setgoal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\resources\\services\\caloriesbyhourdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\resources\\services\\caloriesbyhourdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\resources\\services\\trenddrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\resources\\services\\trenddrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\resources\\services\\stepsweekdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\resources\\services\\stepsweekdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\resources\\services\\stepsbyhourdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\resources\\services\\stepsbyhourdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\resources\\services\\sleepweekdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\resources\\services\\sleepweekdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\resources\\services\\heartratedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\resources\\services\\heartratedrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\resources\\services\\caloriesweekdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\resources\\services\\caloriesweekdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\stepspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\stepspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -15,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\setgoal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\setgoal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\profile.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -29,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\heartratepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\heartratepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\goals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|solutionrelative:healthtracker181486\\view\\goals.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2F0D5FD-38CB-8CA1-1878-3CC140188F1D}|HealthTracker181486\\HealthTracker181486.csproj|c:\\users\\realg\\desktop\\health app\\.maui-health-app\\healthtracker181486\\view\\exerciselist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -106,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,20 +142,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CaloriesByHourDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\CaloriesByHourDrawable.cs",
+              "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Services\\CaloriesByHourDrawable.cs",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\CaloriesByHourDrawable.cs",
+              "RelativeToolTip": "HealthTracker181486\\Resources\\Services\\CaloriesByHourDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T15:44:01.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrendDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\TrendDrawable.cs",
+              "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Services\\TrendDrawable.cs",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\TrendDrawable.cs",
+              "RelativeToolTip": "HealthTracker181486\\Resources\\Services\\TrendDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T15:44:55.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CaloriesWeekDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\CaloriesWeekDrawable.cs",
+              "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Services\\CaloriesWeekDrawable.cs",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\CaloriesWeekDrawable.cs",
+              "RelativeToolTip": "HealthTracker181486\\Resources\\Services\\CaloriesWeekDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T15:44:37.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StepsWeekDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\StepsWeekDrawable.cs",
+              "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Services\\StepsWeekDrawable.cs",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\StepsWeekDrawable.cs",
+              "RelativeToolTip": "HealthTracker181486\\Resources\\Services\\StepsWeekDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T15:44:55.917Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Goals.xaml",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\Goals.xaml",
+              "RelativeDocumentMoniker": "HealthTracker181486\\View\\Goals.xaml",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\Goals.xaml",
+              "RelativeToolTip": "HealthTracker181486\\View\\Goals.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-20T19:22:44.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "StepsPage.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\StepsPage.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\StepsPage.xaml",
               "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\StepsPage.xaml",
               "RelativeToolTip": "HealthTracker181486\\View\\StepsPage.xaml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T21:01:54.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T21:01:54.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "SleepPage.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\SleepPage.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\SleepPage.xaml",
@@ -135,12 +223,59 @@
               "RelativeToolTip": "HealthTracker181486\\View\\SleepPage.xaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T21:01:52.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T21:01:52.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HeartRateDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\HeartRateDrawable.cs",
+              "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Services\\HeartRateDrawable.cs",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\HeartRateDrawable.cs",
+              "RelativeToolTip": "HealthTracker181486\\Resources\\Services\\HeartRateDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T15:44:42.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SetGoal.xaml",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\SetGoal.xaml",
+              "RelativeDocumentMoniker": "HealthTracker181486\\View\\SetGoal.xaml",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\SetGoal.xaml",
+              "RelativeToolTip": "HealthTracker181486\\View\\SetGoal.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-20T19:23:56.118Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "SleepWeekDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\SleepWeekDrawable.cs",
+              "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Services\\SleepWeekDrawable.cs",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\SleepWeekDrawable.cs",
+              "RelativeToolTip": "HealthTracker181486\\Resources\\Services\\SleepWeekDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T15:44:46.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StepsByHourDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\StepsByHourDrawable.cs",
+              "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Services\\StepsByHourDrawable.cs",
+              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Services\\StepsByHourDrawable.cs",
+              "RelativeToolTip": "HealthTracker181486\\Resources\\Services\\StepsByHourDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T15:44:50.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "HeartRatePage.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\HeartRatePage.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\HeartRatePage.xaml",
@@ -148,12 +283,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\HeartRatePage.xaml",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T21:01:39.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T21:01:39.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "ExerciseList.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\ExerciseList.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\ExerciseList.xaml",
@@ -161,12 +295,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\ExerciseList.xaml",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T21:01:34.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T21:01:34.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "CaloriesPage.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\CaloriesPage.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\CaloriesPage.xaml",
@@ -174,12 +307,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\CaloriesPage.xaml",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T21:01:26.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T21:01:26.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\MainPage.xaml.cs",
@@ -187,12 +319,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\MainPage.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAcwBYAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T19:36:42.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:36:42.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\MainPage.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\MainPage.xaml",
@@ -200,12 +331,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\MainPage.xaml",
               "ViewState": "AgIAAI0AAAAAAAAAAAAAAIoAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:26:18.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:26:18.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Styles.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Styles\\Styles.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Styles\\Styles.xaml",
@@ -218,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "Colors.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Resources\\Styles\\Colors.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\Resources\\Styles\\Colors.xaml",
@@ -231,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "EditProfile.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\EditProfile.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\EditProfile.xaml",
@@ -239,12 +369,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\EditProfile.xaml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:24:49.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:24:49.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Profile.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\Profile.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\Profile.xaml",
@@ -252,25 +381,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\Profile.xaml",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAFoAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:24:53.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:24:53.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SetGoal.xaml",
-              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\SetGoal.xaml",
-              "RelativeDocumentMoniker": "HealthTracker181486\\View\\SetGoal.xaml",
-              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\SetGoal.xaml",
-              "RelativeToolTip": "HealthTracker181486\\View\\SetGoal.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:23:56.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Settings.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\Settings.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\Settings.xaml",
@@ -278,12 +393,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\Settings.xaml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAEwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:35:41.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:35:41.303Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "About.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\About.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\About.xaml",
@@ -291,12 +405,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\About.xaml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwC8AAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:35:48.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:35:48.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\AppShell.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\AppShell.xaml",
@@ -304,12 +417,11 @@
               "RelativeToolTip": "HealthTracker181486\\AppShell.xaml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:39:12.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:39:12.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "ExerciseActive.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\ExerciseActive.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\ExerciseActive.xaml",
@@ -317,25 +429,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\ExerciseActive.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T20:25:24.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T20:25:24.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Goals.xaml",
-              "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\Goals.xaml",
-              "RelativeDocumentMoniker": "HealthTracker181486\\View\\Goals.xaml",
-              "ToolTip": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\Goals.xaml",
-              "RelativeToolTip": "HealthTracker181486\\View\\Goals.xaml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T19:22:44.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "HealthTracker181486\\AppShell.xaml.cs",
@@ -343,12 +441,11 @@
               "RelativeToolTip": "HealthTracker181486\\AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T19:39:14.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:39:14.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "AddExercise.xaml.cs",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\AddExercise.xaml.cs",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\AddExercise.xaml.cs",
@@ -356,12 +453,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\AddExercise.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T20:39:21.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T20:39:21.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "About.xaml.cs",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\About.xaml.cs",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\About.xaml.cs",
@@ -369,12 +465,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\About.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T20:21:30.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T20:21:30.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "AddExercise.xaml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\AddExercise.xaml",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\AddExercise.xaml",
@@ -382,12 +477,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\AddExercise.xaml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-20T20:39:19.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T20:39:19.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "ExerciseActive.xaml.cs",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\ExerciseActive.xaml.cs",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\ExerciseActive.xaml.cs",
@@ -395,12 +489,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\ExerciseActive.xaml.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAmwE8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T20:25:26.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T20:25:26.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "Settings.xaml.cs",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\View\\Settings.xaml.cs",
               "RelativeDocumentMoniker": "HealthTracker181486\\View\\Settings.xaml.cs",
@@ -408,12 +501,11 @@
               "RelativeToolTip": "HealthTracker181486\\View\\Settings.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T19:57:37.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:57:37.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "colors.xml",
               "DocumentMoniker": "C:\\Users\\realg\\Desktop\\Health App\\.MAUI-Health-App\\HealthTracker181486\\Platforms\\Android\\Resources\\values\\colors.xml",
               "RelativeDocumentMoniker": "HealthTracker181486\\Platforms\\Android\\Resources\\values\\colors.xml",
@@ -421,8 +513,7 @@
               "RelativeToolTip": "HealthTracker181486\\Platforms\\Android\\Resources\\values\\colors.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-10-20T19:28:21.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-20T19:28:21.9Z"
             }
           ]
         }

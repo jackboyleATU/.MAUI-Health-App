@@ -1,4 +1,6 @@
-﻿using System;
+﻿// The creation of this graph program was made using Claude, by Anthropic, with small tweaks to fit the needs and theme of the application.
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
