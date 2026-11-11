@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HealthTracker181486.Resources.Services
+namespace HealthTracker181486.Controls
 {
-    public class SleepWeekDrawable : IDrawable
+    public class StepsWeekDrawable : IDrawable
     {
         // Oldest day first, today last. Fake data for the wireframe.
         public int[] Data { get; set; } = { 4200, 6800, 3100, 8900, 5200, 300, 7240 };
@@ -48,7 +48,7 @@ namespace HealthTracker181486.Resources.Services
                 if (Data[i] > 0)
                 {
                     float h = Math.Max(barWidth, Data[i] / max * plotHeight);
-                    canvas.FillColor = Color.FromArgb("#7950f2");
+                    canvas.FillColor = Color.FromArgb("#44D211");
                     canvas.FillRoundedRectangle(cx - barWidth / 2, baseline - h, barWidth, h, barWidth / 2);
                 }
 

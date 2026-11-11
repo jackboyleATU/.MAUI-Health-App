@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Maui.Graphics;
 
-namespace HealthTracker181486.Resources.Services
+namespace HealthTracker181486.Controls
 {
     public class HeartRateDrawable : IDrawable
     {

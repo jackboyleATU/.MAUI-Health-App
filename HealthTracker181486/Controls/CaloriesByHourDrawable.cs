@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Maui.Graphics;
 
-namespace HealthTracker181486.Resources.Services
+namespace HealthTracker181486.Controls
 {
-    public class StepsByHourDrawable : IDrawable
+    public class CaloriesByHourDrawable : IDrawable
     {
         // 48 half-hour slots, 00:00 to 24:00. Fake data for the wireframe.
         public float[] Data { get; set; } = BuildSampleData();
@@ -36,7 +36,7 @@ namespace HealthTracker181486.Resources.Services
             float max = Math.Max(1, Data.Max());
 
             // Bars
-            canvas.FillColor = Color.FromArgb("#44D211");
+            canvas.FillColor = Color.FromArgb("#D10000");
             for (int i = 0; i < 48; i++)
             {
                 if (Data[i] <= 0) continue;

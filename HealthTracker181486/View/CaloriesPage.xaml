@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthTracker181486.View.CaloriesPage"
-             xmlns:local="clr-namespace:HealthTracker181486.Resources.Services"
+             xmlns:local="clr-namespace:HealthTracker181486.Controls"
              Title="Calories"
              Shell.TitleColor="white"
              Shell.ForegroundColor="white"

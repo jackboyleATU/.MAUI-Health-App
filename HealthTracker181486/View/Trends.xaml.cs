@@ -1,5 +1,5 @@
 
-using HealthTracker181486.Resources.Services;
+using HealthTracker181486.Controls;
 
 namespace HealthTracker181486.View;
 public partial class Trends : ContentPage

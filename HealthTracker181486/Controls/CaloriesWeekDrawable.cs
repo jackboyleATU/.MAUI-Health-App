@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HealthTracker181486.Resources.Services
+namespace HealthTracker181486.Controls
 {
     public class CaloriesWeekDrawable : IDrawable
     {
