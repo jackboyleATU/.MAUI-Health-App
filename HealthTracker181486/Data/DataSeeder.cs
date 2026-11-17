@@ -24,6 +24,11 @@ namespace HealthTracker181486.Data
             };
             await db.InsertAsync(user);
 
+            var stepsType = new GoalType { Name = "Steps", Unit = "steps", MinTarget=1000, MaxTarget=50000, DefaultTarget=6000 };
+            var caloriesType = new GoalType { Name = "Calories", Unit = "calories", MinTarget = 100, MaxTarget = 3000, DefaultTarget = 600 };
+            var sleepType = new GoalType { Name = "Sleep", Unit = "minutes", MinTarget = 60, MaxTarget = 720, DefaultTarget = 420 };
+            await db.InsertAllAsync(new[] { stepsType, caloriesType, sleepType });
+
             await db.InsertAllAsync(new[]
             {
                 new ExerciseType { Name = "Walking", IconValue = "walking.png", MetValue = 3.5, TracksDistance = true},
@@ -35,9 +40,9 @@ namespace HealthTracker181486.Data
 
             await db.InsertAllAsync(new[]
             {
-                new Goal { UserId = user.Id, GoalType = GoalType.Steps, TargetValue = 6000},
-                new Goal { UserId = user.Id, GoalType = GoalType.Calories, TargetValue = 600},
-                new Goal { UserId = user.Id, GoalType = GoalType.Sleep, TargetValue = 420}, // minutes (7h)
+                new Goal { UserId = user.Id, GoalTypeId = stepsType.Id, TargetValue = stepsType.DefaultTarget},
+                new Goal { UserId = user.Id, GoalTypeId = caloriesType.Id, TargetValue = caloriesType.DefaultTarget},
+                new Goal { UserId = user.Id, GoalTypeId = sleepType.Id, TargetValue = sleepType.DefaultTarget},
             });
         }
     }

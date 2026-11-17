@@ -22,5 +22,7 @@ namespace HealthTracker181486.Models
         public int CaloriesBurned { get; set; }
 
         public double DistanceKm { get; set; }
+
+        public int Floors { get; set; }
     }
 }

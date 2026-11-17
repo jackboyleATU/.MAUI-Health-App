@@ -19,7 +19,9 @@ namespace HealthTracker181486.Models
         [Indexed]
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }  
-        public int DurationMinutes { get; set; }
         public DataSource Source { get; set; } = DataSource.Manual;
+
+        [Ignore]
+        public int DurationMinutes => (int)(EndTime - StartTime).TotalMinutes;
     }
 }

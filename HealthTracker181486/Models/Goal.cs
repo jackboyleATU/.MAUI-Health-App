@@ -5,12 +5,6 @@ using SQLite;
 
 namespace HealthTracker181486.Models
 {
-    public enum GoalType
-    {
-        Steps = 0,
-        Calories = 1,
-        Sleep = 2
-    }
 
     [Table("Goal")]
     public class Goal
@@ -21,7 +15,9 @@ namespace HealthTracker181486.Models
         [Indexed]
         public int UserId { get; set; }
 
-        public GoalType GoalType { get; set; }
+        [Indexed]
+        public int GoalTypeId { get; set; }
+
         public int TargetValue { get; set; }
         public bool ReminderEnabled { get; set; }
         public bool IsActive { get; set; } = true;

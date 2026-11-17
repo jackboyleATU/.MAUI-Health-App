@@ -26,9 +26,11 @@ namespace HealthTracker181486
 
             builder.Services.AddSingleton(typeof(IRepository<>), typeof(Repository<>));
 
-            builder.Services.AddSingleton<DailySummaryRepository>();
+            builder.Services.AddSingleton<ActivityIntervalRepository>();
             builder.Services.AddSingleton<ExerciseSessionRepository>();
+            builder.Services.AddSingleton<GoalRepository>();
             builder.Services.AddSingleton<HealthMeasurementRepository>();
+            builder.Services.AddSingleton<SleepSessionRepository>();
 
             return builder.Build();
         }

@@ -32,7 +32,15 @@ namespace HealthTracker181486.Data
 
                 var connection = new SQLiteAsyncConnection(_databasePath, Flags);
 
-                await connection.CreateTableAsync(CreateFlags.None, typeof(User), typeof(ExerciseType), typeof(ExerciseSession), typeof(ActivityInterval), typeof(DailySummary), typeof(SleepSession), typeof(HealthMeasurement), typeof(Goal));
+                await connection.CreateTablesAsync(CreateFlags.None, typeof(User), 
+                                                                    typeof(GoalType), 
+                                                                    typeof(MeasurementType), 
+                                                                    typeof(ExerciseType), 
+                                                                    typeof(ExerciseSession), 
+                                                                    typeof(ActivityInterval), 
+                                                                    typeof(SleepSession), 
+                                                                    typeof(HealthMeasurement), 
+                                                                    typeof(Goal));
 
                 await DataSeeder.SeedAsync(connection);
 

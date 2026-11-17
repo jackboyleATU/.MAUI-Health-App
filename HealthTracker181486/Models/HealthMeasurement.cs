@@ -6,12 +6,6 @@ using SQLite;
 namespace HealthTracker181486.Models
 {
 
-    public enum MeasurementType
-    {
-        HeartRate = 0,
-        BloodPressure = 1
-    }
-
     [Table("HealthMeasurement")]
     public class HealthMeasurement
     {
@@ -22,7 +16,7 @@ namespace HealthTracker181486.Models
         public int UserId { get; set; }
 
         [Indexed]
-        public MeasurementType Type { get; set; }
+        public int MeasurementTypeId { get; set; }
         public double Value { get; set; }
         public string Unit { get; set; } = string.Empty;
 

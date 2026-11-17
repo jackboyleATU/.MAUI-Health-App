@@ -24,5 +24,7 @@ namespace HealthTracker181486.Models
         public double? DistanceKm { get; set; }
         public int? Steps { get; set; }
         public int? CaloriesBurned { get; set; }
+
+        public DataSource Source { get; set; } = DataSource.Manual;
     }
 }
