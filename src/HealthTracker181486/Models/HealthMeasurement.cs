@@ -18,7 +18,6 @@ namespace HealthTracker181486.Models
         [Indexed]
         public int MeasurementTypeId { get; set; }
         public double Value { get; set; }
-        public string Unit { get; set; } = string.Empty;
 
         [Indexed]
         public DateTime RecordedAt { get; set; }
