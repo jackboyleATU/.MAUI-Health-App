@@ -31,6 +31,12 @@ namespace HealthTracker181486.Data
 
             await db.InsertAllAsync(new[]
             {
+                new MeasurementType {Name = "Heart rate", Unit = "bpm"},
+                new MeasurementType {Name = "Blood oxygen", Unit = "%"},
+            });
+
+            await db.InsertAllAsync(new[]
+            {
                 new ExerciseType { Name = "Walking", IconValue = "walking.png", MetValue = 3.5, TracksDistance = true},
                 new ExerciseType { Name = "Running", IconValue = "running.png", MetValue = 9.8, TracksDistance = true},
                 new ExerciseType { Name = "Cycling", IconValue = "cycling.png", MetValue = 7.5, TracksDistance = true},
@@ -44,6 +50,8 @@ namespace HealthTracker181486.Data
                 new Goal { UserId = user.Id, GoalTypeId = caloriesType.Id, TargetValue = caloriesType.DefaultTarget},
                 new Goal { UserId = user.Id, GoalTypeId = sleepType.Id, TargetValue = sleepType.DefaultTarget},
             });
+
+            await SampleDataGenerator.GenerateAsync(db, user.Id);
         }
     }
 }

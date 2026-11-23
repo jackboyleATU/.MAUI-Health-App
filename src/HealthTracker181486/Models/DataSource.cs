@@ -7,6 +7,6 @@ namespace HealthTracker181486.Models
     public enum DataSource
     {
         Manual = 0,
-        Sensor = 1
+        Wearable = 1
     }
 }
